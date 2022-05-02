@@ -31,12 +31,43 @@
     text-decoration: none;
     color: white;
     margin-left: 15px;
+    padding: 5px;
     border-bottom: 2px solid black;
     margin-right: 15px;
 }
 
 /* nav route link style on hover  */
 .nav-rout-link:hover {
-    border-bottom: 2px solid rgb(230, 230, 230);
-    color: wheat;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 248, 236);
+    padding: 5px;
+
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    .nav-rout-link {
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .logo-div {
+        display: none;
+    }
+
+    .nav-rout-links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sign-out-btn {
+        padding: 3px 9px;
+        margin-top: 10px;
+    }
+
+    .sign-div-btn {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3px 9px;
+    }
 }
