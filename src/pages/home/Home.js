@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
+        <div >
             {/* nav bar part */}
             <NavBar></NavBar>
             {/* header part start */}
