@@ -1,0 +1,30 @@
+.review-single {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+/* review person img  */
+.review-person {
+    width: 75px;
+    border-radius: 75px;
+}
+
+/* review person */
+
+.person-name {
+    font-size: 20px;
+}
+
+/* review rating star */
+.icon-star {
+    width: 25px;
+    padding: 4px;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    .review-single {
+        display: grid;
+    }
+}

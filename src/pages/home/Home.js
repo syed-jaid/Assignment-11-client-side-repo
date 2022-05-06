@@ -6,6 +6,7 @@ import './Home.css';
 import Carts from './Cards/Carts';
 import Footer from '../footer/Footer';
 import { Link } from 'react-router-dom';
+import Review from './Review/Review';
 
 const Home = () => {
     return (
@@ -37,6 +38,10 @@ const Home = () => {
                     <button className='card-button'>READ MORE</button>
                 </div>
             </div>
+
+            {/* Review part start  */}
+            <Review></Review>
+
             <Footer></Footer>
         </div>
     );

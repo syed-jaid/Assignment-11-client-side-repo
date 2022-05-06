@@ -5,7 +5,7 @@ import NavBar from '../navBar/NavBar';
 const Items = () => {
     const [cards, setcards] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/cards')
+        fetch('data.json')
             .then(res => res.json())
             .then(data => {
                 setcards(data)

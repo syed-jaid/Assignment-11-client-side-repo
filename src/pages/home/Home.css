@@ -84,12 +84,13 @@
     }
 
     .homeimg-1st {
-        padding: 10px;
+        padding: 0px;
         border-radius: 5%;
+        margin: 0;
     }
 
     .img-discription {
-        padding: 10px;
+        padding: 9px;
         margin-top: 25px;
     }
 
