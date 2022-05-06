@@ -12,7 +12,7 @@ const Carts = () => {
     }, [])
     return (
         <div>
-            <div className='all-cards'>
+            <div className='all-cards mb-5'>
                 {
                     cards.slice(0, 6).map(card =>
                         <div className="card mx-auto" key={card._id}>

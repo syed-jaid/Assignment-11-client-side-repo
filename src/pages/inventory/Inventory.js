@@ -31,12 +31,28 @@ const Inventory = () => {
                             {/* card info  */}
                             <div className="card-body">
                                 {/* card name  */}
-                                <h5 className="card-title">{card.name}</h5>
+                                <h2 className="card-title">{card.name}</h2>
                                 {/* card discription  */}
-                                <p className="card-text">{card.discription} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, recusandae hic assumenda velit neque soluta enim, et veniam eligendi, ea id beatae? Vero qui, beatae veniam culpa rem nisi cumque. </p>
-                                <p className='mb-0'>quantity: 15pc</p>
-                                <h4 className='mb-4 mt-2'>Price: $4493749</h4>
-                                <button className='card-buttons'>update</button>
+                                <h5 className="card-text">{card.discription} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, recusandae hic assumenda velit neque soluta enim, et veniam eligendi, ea id beatae? Vero qui, beatae veniam culpa rem nisi cumque. </h5>
+                                {/* items quantity */}
+                                <h5 className='mb-0'>Quantity: 15pc</h5>
+                                {/* items price  */}
+                                <h3 className='my-2'>Price: $4493749</h3>
+                                {/* Delivered button  */}
+                                <button className='card-buttons mb-4'>Delivered</button>
+                                <br />
+                                {/* Restocking  */}
+                                <div>
+                                    <h4 className='fw-bold mb-3'>Restock the items</h4>
+                                    <form>
+                                        {/* input fild for restocking */}
+                                        <div className='my-3 w-100' >
+                                            <input type="number" name="number" id="" />
+                                        </div>
+                                        {/* Restock button  */}
+                                        <input type="button" className='card-buttons' value="Restock " />
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

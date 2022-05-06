@@ -57,6 +57,25 @@
 
 }
 
+.card-button {
+    background-color: #89e37a;
+    padding: 8px 30px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/* cards button on hover  */
+
+.card-button:hover {
+    border: 3px solid rgb(120, 231, 127);
+    color: rgb(255, 255, 255);
+    background-color: rgb(67, 67, 67);
+
+}
+
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
     .home-1st-div {

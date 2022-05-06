@@ -5,6 +5,7 @@ import img1st from '../../img/home-2st.jpg'
 import './Home.css';
 import Carts from './Cards/Carts';
 import Footer from '../footer/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -21,6 +22,10 @@ const Home = () => {
             {/* all cards  */}
             <Carts></Carts>
 
+            {/* all inventory items link */}
+            <div className='d-flex justify-content-center'>
+                <Link to='/manageInventories' className='card-button m-4'>Manage Inventories</Link>
+            </div>
             {/* extra part  */}
             <div className=' home-1st-div'>
                 {/* img  */}
