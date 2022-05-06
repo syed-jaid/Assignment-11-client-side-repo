@@ -1,0 +1,15 @@
+/* main div of card details */
+.card-details {
+    padding: 30px;
+    margin: 30px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    .card-details {
+        margin: 10px;
+        padding: 10px;
+    }
+}

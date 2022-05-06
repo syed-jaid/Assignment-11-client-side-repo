@@ -52,8 +52,8 @@
 
 .card-buttons:hover {
     border: 3px solid rgb(120, 231, 127);
-    color: rgb(0, 0, 0);
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(67, 67, 67);
 
 }
 
