@@ -1,7 +1,8 @@
 /* home 1st img  */
 .homeimg-1st {
-    border-radius: 70px;
-    padding: 50px;
+    border-radius: 20px;
+    border: 3px solid rgb(101, 232, 101);
+    margin: 50px;
 }
 
 .home-1st-div {
@@ -38,7 +39,7 @@
 /* card buttons  */
 
 .card-buttons {
-    background-color: #89e37a;
+    background-color: #6ad856;
     padding: 8px 30px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -58,7 +59,7 @@
 }
 
 .card-button {
-    background-color: #89e37a;
+    background-color: #6ad856;
     padding: 8px 30px;
     border-radius: 14px;
     text-decoration: none;

@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../navBar/NavBar';
 import headerimg from '../../img/header.jpg'
-import img1st from '../../img/home-2st.jpg'
+import img1st from '../../img/jahid.jpg'
 import './Home.css';
 import Carts from './Cards/Carts';
 import Footer from '../footer/Footer';
@@ -34,6 +34,7 @@ const Home = () => {
                 <div className=' w-100 img-discription'>
                     <h2 className='fw-bold'>OVERVIEW</h2>
                     <p className='font-monospace'>The development of the Ninja H2®R motorcycle goes beyond the boundaries of any other Kawasaki motorcycle. Born through the unprecedented collaboration between multiple divisions within the Kawasaki Heavy Industries, Ltd. (KHI) organization, the world's only limited production supercharged hypersport model represents the unbridled pinnacle of Kawasaki engineering, with astonishing acceleration and mind-bending top speed suitable only for the track.as</p>
+                    <button className='card-button'>READ MORE</button>
                 </div>
             </div>
             <Footer></Footer>
