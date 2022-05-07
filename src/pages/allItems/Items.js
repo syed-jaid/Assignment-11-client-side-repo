@@ -14,7 +14,6 @@ const Items = () => {
             })
     }, [])
     const deleteItem = (props) => {
-        console.log(props)
         const confirm = window.confirm('Do you want to Remove it')
         if (confirm) {
             fetch(`http://localhost:5000/delete/${props}`, {
@@ -42,7 +41,7 @@ const Items = () => {
                                 <br />
                                 <small>{card.supplierName}</small>
                             </p>
-                            <p className='mb-0'>quantity: 15pc</p>
+                            <p className='mb-0'>Quantity: {card.quantity}pc</p>
                             <h4 className='mb-4 mt-2'>Price: $4493749</h4>
                             {/* delete button  */}
                             <button className='card-buttons' onClick={() => deleteItem(card._id)}>Delete</button>

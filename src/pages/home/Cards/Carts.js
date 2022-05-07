@@ -22,7 +22,7 @@ const Carts = () => {
                                 <br />
                                 <small>{card.supplierName}</small>
                             </p>
-                            <p className='mb-0'>quantity: 15pc</p>
+                            <p className='mb-0'>quantity: {card.quantity}pc</p>
                             <h4 className='mb-4 mt-2'>Price: $4493749</h4>
                             <Link className='card-buttons' to={'/inventory/' + card._id}>update</Link>
                         </div>
