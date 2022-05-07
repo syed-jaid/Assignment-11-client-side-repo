@@ -19,8 +19,8 @@ const NavBar = () => {
                     {/* nav route links  */}
                     <div className='nav-rout-links '>
                         <Link className='nav-rout-link' to='/'>Home</Link>
-                        <Link className='nav-rout-link' to='/'>Manage Items</Link>
-                        <Link className='nav-rout-link' to='/'>Add Item</Link>
+                        <Link className='nav-rout-link' to='/manageInventories'>Manage Items</Link>
+                        <Link className='nav-rout-link' to='/addItems'>Add Item</Link>
                         <Link className='nav-rout-link' to='/'>My items</Link>
                     </div>
                     {/* navbar sign in and sign out */}

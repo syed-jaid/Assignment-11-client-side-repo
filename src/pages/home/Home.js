@@ -14,19 +14,9 @@ const Home = () => {
             {/* nav bar part */}
             <NavBar></NavBar>
             {/* header part start */}
-            <img className='w-100 h-75 mt-1 mb-4' src={headerimg} alt="" />
+            <img className=' h-50 w-100 mt-1 mb-4 ' src={headerimg} alt="" />
 
-
-            {/* main part or inventory start  */}
-            <h1 className='text-center fw-bold mt-5'>Inventory </h1>
-
-            {/* all cards  */}
-            <Carts></Carts>
-
-            {/* all inventory items link */}
-            <div className='d-flex justify-content-center'>
-                <Link to='/manageInventories' className='card-button m-4'>Manage Inventories</Link>
-            </div>
+            <h1 className='text-center fw-bold mt-5 pt-5'>THE BEST BICKS IN THE WORLD</h1>
             {/* extra part  */}
             <div className=' home-1st-div'>
                 {/* img  */}
@@ -39,9 +29,23 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* main part or inventory start  */}
+            <h1 className='text-center fw-bold mt-5'>Inventory </h1>
+
+            {/* all cards  */}
+            <Carts></Carts>
+
+            {/*Manage all inventory items link */}
+            <div className='d-flex justify-content-center'>
+                <Link to='/manageInventories' className='card-button mb-4'>Manage Inventories</Link>
+            </div>
+
+
             {/* Review part start  */}
+            <h1 className='text-center fw-bold mt-5'>REVIEWS </h1>
             <Review></Review>
 
+            {/* footer start  */}
             <Footer></Footer>
         </div>
     );

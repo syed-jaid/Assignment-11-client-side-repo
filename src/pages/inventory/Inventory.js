@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import NavBar from '../navBar/NavBar';
 import './Inventory.css'
 
@@ -34,10 +34,10 @@ const Inventory = () => {
                                 <h2 className="card-title">{card.name}</h2>
                                 {/* card discription  */}
                                 <h5 className="card-text">{card.discription} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, recusandae hic assumenda velit neque soluta enim, et veniam eligendi, ea id beatae? Vero qui, beatae veniam culpa rem nisi cumque. </h5>
-                                {/* items quantity */}
-                                <h5 className='mb-0'>Quantity: 15pc</h5>
                                 {/* items price  */}
                                 <h3 className='my-2'>Price: $4493749</h3>
+                                {/* items quantity */}
+                                <h5 className='mb-0'>Quantity: 15pc</h5>
                                 {/* Delivered button  */}
                                 <button className='card-buttons mb-4'>Delivered</button>
                                 <br />
@@ -58,6 +58,11 @@ const Inventory = () => {
                     </div>
                 </div>
             </div>
+            {/*Manage all inventory items link */}
+            <div className='d-flex justify-content-center'>
+                <Link to='/manageInventories' className='card-button mb-4'>Manage Inventories</Link>
+            </div>
+
         </div>
     );
 };
