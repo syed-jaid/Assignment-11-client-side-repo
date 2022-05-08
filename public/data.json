@@ -1,6 +1,6 @@
 [
     {
-        "name": "name",
+        "name": "enter name",
         "discription": "discription",
         "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
         "price": "704945",
@@ -10,7 +10,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/PQWn4Bk/1.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"
@@ -18,7 +18,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/9Hz6R4T/2.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"
@@ -26,7 +26,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/d4N1Wx6/5.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"
@@ -34,7 +34,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/0nBmbFN/4.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"
@@ -42,7 +42,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/Dpp5LS1/7.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"
@@ -50,7 +50,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/4s9KnGZ/8.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"
@@ -58,7 +58,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/56vzcfk/6.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"
@@ -66,31 +66,7 @@
     {
         "name": "name",
         "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
-    },
-    {
-        "name": "name",
-        "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
-    },
-    {
-        "name": "name",
-        "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
-    },
-    {
-        "name": "name",
-        "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
+        "img": "https://i.ibb.co/pQtP9NR/3.png",
         "price": "price",
         "quantity": "quantity",
         "supplierName": "supplierName"

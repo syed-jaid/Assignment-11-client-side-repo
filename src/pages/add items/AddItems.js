@@ -1,33 +1,17 @@
-import React, { useState } from 'react';
 import NavBar from '../navBar/NavBar';
 
 const AddItems = () => {
-    const [name, setName] = useState('');
-    const [price, setprice] = useState('');
-    const [Quntity, setQuntity] = useState('');
-    const [Sapliername, setSapliername] = useState('');
-    const [Image, setImage] = useState('');
-    const [Discription, setDiscription] = useState('');
 
     const onSubmit = (e) => {
         e.preventDefault();
         // set input data from input fild  
-        const setdata = () => {
-            setName(e.target.name.value)
-            setprice(e.target.price.value)
-            setQuntity(e.target.Quntity.value)
-            setSapliername(e.target.Sapliername.value)
-            setImage(e.target.imgUrl.value)
-            setDiscription(e.target.Discription.value)
-        }
-
         const data = {
             name: e.target.name.value,
-            price: price,
-            Quntity: Quntity,
-            Sapliername: Sapliername,
-            Image: Image,
-            Discription: Discription
+            price: e.target.price.value,
+            Quntity: e.target.Quntity.value,
+            Sapliername: e.target.Sapliername.value,
+            Image: e.target.imgUrl.value,
+            Discription: e.target.Discription.value
         }
         console.log(data)
         fetch('http://localhost:5000/add', {
@@ -47,7 +31,6 @@ const AddItems = () => {
                     alert("Sorry sir data isn't inserted , thanks")
                 }
             });
-        setdata()
     }
     return (
         <div>

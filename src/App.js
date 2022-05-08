@@ -5,6 +5,7 @@ import Items from './pages/allItems/Items';
 import Home from './pages/home/Home';
 import Inventory from './pages/inventory/Inventory';
 import MyItems from './pages/MyItems/MyItems';
+import Registor from './pages/signIn/Registor';
 import Sign from './pages/signIn/Sign';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/addItems' element={<AddItems></AddItems>}></Route>
         <Route path='/myItems' element={<MyItems></MyItems>}></Route>
         <Route path='/login' element={<Sign></Sign>}></Route>
+        <Route path='/Registor' element={<Registor></Registor>}></Route>
       </Routes>
     </div>
   );

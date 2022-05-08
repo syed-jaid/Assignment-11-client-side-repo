@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../img/logo.png';
 import './NavBar.css'
-
+import { signOut } from 'firebase/auth';
+import auth from '../../firebase.init';
 
 const NavBar = () => {
     return (
@@ -25,8 +26,13 @@ const NavBar = () => {
                     </div>
                     {/* navbar sign in and sign out */}
                     <div className='sign-div-btn'>
-                        <button className='sign-out-btn font-monospace'>Sign Out</button>
+                        {/* signOut  */}
+
+                        <button className='sign-out-btn font-monospace' onClick={() => signOut(auth)}>Sign Out</button>
+
+                        {/* signIn */}
                         <Link to='/login'><button className='sign-out-btn font-monospace'>Sign In</button></Link>
+                        <Link to='/Registor'><button className='sign-out-btn font-monospace'>Registor</button></Link>
                     </div>
                 </div>
             </nav>
