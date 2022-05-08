@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../img/logo.png';
 import './NavBar.css'
 import { signOut } from 'firebase/auth';
 import auth from '../../firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const NavBar = () => {
+    const user = useAuthState(auth)
+    const naviget = useLocation()
+    const navgaiteValue = naviget.pathname;
     return (
         <div>
             <nav className="navbar navbar-light ">
@@ -21,18 +25,33 @@ const NavBar = () => {
                     <div className='nav-rout-links '>
                         <Link className='nav-rout-link' to='/'>Home</Link>
                         <Link className='nav-rout-link' to='/manageInventories'>Manage Items</Link>
-                        <Link className='nav-rout-link' to='/addItems'>Add Item</Link>
-                        <Link className='nav-rout-link' to='/myItems'>My items</Link>
+                        {
+                            user[0] ? <span><Link className='nav-rout-link' to='/addItems'>Add Item</Link>
+                                <Link className='nav-rout-link' to='/myItems'>My items</Link></span> : ''
+                        }
+                        <Link className='nav-rout-link' to='/'>Blog</Link>
                     </div>
                     {/* navbar sign in and sign out */}
                     <div className='sign-div-btn'>
+
+                        {/* signIn
+                        
+                         */}
                         {/* signOut  */}
+                        {
+                            user[0] ? <button className='sign-out-btn font-monospace' onClick={() => signOut(auth)}>Sign Out</button> : <div className='mt-2'>
+                                {
+                                    navgaiteValue === '/Registor' ? <Link to='/Registor'><button className='sign-out-btn font-monospace'>Registor</button></Link> : ''
+                                }
+                                {
+                                    navgaiteValue === '/login' ? <Link to='/login'><button className='sign-out-btn font-monospace'>Log In</button></Link> : ''
+                                }
+                                {
+                                    navgaiteValue === '/' || navgaiteValue === '/manageInventories' || navgaiteValue === '/blog' || navgaiteValue === `/inventory` ? <Link className=" sign-out-btn" to='/login'>log In</Link> : ''
+                                }
 
-                        <button className='sign-out-btn font-monospace' onClick={() => signOut(auth)}>Sign Out</button>
-
-                        {/* signIn */}
-                        <Link to='/login'><button className='sign-out-btn font-monospace'>Sign In</button></Link>
-                        <Link to='/Registor'><button className='sign-out-btn font-monospace'>Registor</button></Link>
+                            </div>
+                        }
                     </div>
                 </div>
             </nav>

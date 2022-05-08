@@ -50,13 +50,11 @@ const Footer = () => {
 
                             {/* sing up part */}
                             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                                <h5 className="text-white mb-4">Sign up </h5>
-
+                                <h5 className="text-white mb-4">Sign up</h5>
                                 <div className="form-outline form-white mb-4">
                                     <input type="email" id="form5Example2" className="form-control" />
-                                    <label className="form-label text-white" for="form5Example2" >Email address</label>
+                                    <label className="form-label text-white">Email address</label>
                                 </div>
-
                                 <button type="submit" className="btn btn-outline-white btn-block">Subscribe</button>
                             </div>
                         </div>

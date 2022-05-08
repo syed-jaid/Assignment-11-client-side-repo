@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 import NavBar from '../navBar/NavBar';
 
 const MyItems = () => {
-    const [Mycards, setMycards] = useState([])
+    const [Mycards, setMycards] = useState([]);
+    const user = useAuthState(auth)
+    const email = user[0]?.email
     useEffect(() => {
-        fetch('http://localhost:5000/myitems')
+        fetch(`http://localhost:5000/myitems?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 setMycards(data)
             })
     }, [])
+    // delete Item api call
     const deleteItem = (props) => {
         const confirm = window.confirm('Do you want to Remove it')
         if (confirm) {

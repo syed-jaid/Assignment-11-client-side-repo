@@ -8,7 +8,6 @@ import NavBar from '../navBar/NavBar';
 
 const Registor = () => {
 
-
     // all usestates are here
     const [name, setname] = useState('')
     const [email, setemail] = useState('')

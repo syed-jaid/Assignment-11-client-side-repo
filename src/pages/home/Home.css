@@ -77,6 +77,19 @@
 
 }
 
+/* loading spinner */
+.loading-spinner {
+    width: 150px;
+    height: 150px;
+}
+
+.loadingdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
     .home-1st-div {

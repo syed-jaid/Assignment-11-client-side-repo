@@ -7,6 +7,7 @@ const Inventory = () => {
     const { id } = useParams();
     const [card, setcard] = useState({})
     const [quantitys, setquntity] = useState('')
+
     useEffect(() => {
         fetch(`http://localhost:5000/card/${id}`)
             .then(res => res.json())
@@ -85,7 +86,7 @@ const Inventory = () => {
                     <div className="row g-0">
                         <div className="col-md-4">
                             {/* card img  */}
-                            <img src={card.img} className="img-fluid rounded-start" alt="..." />
+                            <img src={card.img} className="img-fluid rounded-start h-100" alt="..." />
                         </div>
                         <div className="col-md-8">
                             {/* card info  */}
