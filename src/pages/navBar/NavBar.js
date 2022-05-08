@@ -21,11 +21,12 @@ const NavBar = () => {
                         <Link className='nav-rout-link' to='/'>Home</Link>
                         <Link className='nav-rout-link' to='/manageInventories'>Manage Items</Link>
                         <Link className='nav-rout-link' to='/addItems'>Add Item</Link>
-                        <Link className='nav-rout-link' to='/'>My items</Link>
+                        <Link className='nav-rout-link' to='/myItems'>My items</Link>
                     </div>
                     {/* navbar sign in and sign out */}
                     <div className='sign-div-btn'>
                         <button className='sign-out-btn font-monospace'>Sign Out</button>
+                        <Link to='/login'><button className='sign-out-btn font-monospace'>Sign In</button></Link>
                     </div>
                 </div>
             </nav>
