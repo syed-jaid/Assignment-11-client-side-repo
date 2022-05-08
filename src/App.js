@@ -2,9 +2,11 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddItems from './pages/add items/AddItems';
 import Items from './pages/allItems/Items';
+import Blog from './pages/Blog/Blog';
 import Home from './pages/home/Home';
 import Inventory from './pages/inventory/Inventory';
 import MyItems from './pages/MyItems/MyItems';
+import NotFound from './pages/NotFound';
 import Registor from './pages/signIn/Registor';
 import Requird from './pages/signIn/Requird';
 import Sign from './pages/signIn/Sign';
@@ -14,6 +16,7 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/inventory/:id' element={<Requird><Inventory></Inventory></Requird>}></Route>
         <Route path='/manageInventories' element={
           <Requird><Items></Items></Requird>}></Route>
@@ -21,6 +24,7 @@ function App() {
         <Route path='/myItems' element={<Requird><MyItems></MyItems></Requird>}></Route>
         <Route path='/login' element={<Sign></Sign>}></Route>
         <Route path='/Registor' element={<Registor></Registor>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );

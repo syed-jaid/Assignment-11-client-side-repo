@@ -66,9 +66,7 @@ const Registor = () => {
         }
         else {
             seterror(error?.message)
-            setuperror(Error)
             setpassworderror('Your password and confirm password are not maching')
-            return
         }
     };
 

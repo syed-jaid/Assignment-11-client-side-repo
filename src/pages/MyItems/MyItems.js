@@ -8,7 +8,7 @@ const MyItems = () => {
     const user = useAuthState(auth)
     const email = user[0]?.email
     useEffect(() => {
-        fetch(`http://localhost:5000/myitems?email=${email}`)
+        fetch(`https://shielded-woodland-29897.herokuapp.com/myitems?jwtemail=${email}`)
             .then(res => res.json())
             .then(data => {
                 setMycards(data)
@@ -18,7 +18,7 @@ const MyItems = () => {
     const deleteItem = (props) => {
         const confirm = window.confirm('Do you want to Remove it')
         if (confirm) {
-            fetch(`http://localhost:5000/Myitems/${props}`, {
+            fetch(`https://shielded-woodland-29897.herokuapp.com/Myitems/${props}`, {
                 method: 'Delete',
             })
                 .then(response => response.json())
@@ -40,13 +40,13 @@ const MyItems = () => {
                             <img src={card.Image} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h3 className="">{card.name}</h3>
-                                <p className="card-text mb-0">{card.discription} Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <p className="card-text mb-0">{card.Discription}
                                     <br />
-                                    <small>{card.supplierName}</small>
+                                    <small>supplier Name: {card.supplierName}</small>
                                 </p>
                                 <p className='mb-0'>quantity: {card.quantity}pc</p>
-                                <h4 className='mb-4 mt-2'>Price: $4493749</h4>
-                                <button className='card-buttons' onClick={() => deleteItem(card._id)}>Deletes</button>
+                                <h4 className='mb-4 mt-2'>Price: ${card.price}</h4>
+                                <button className='card-buttons' onClick={() => deleteItem(card._id)}>Delete</button>
                             </div>
                         </div>
                     )

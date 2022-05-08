@@ -1,74 +1,66 @@
 [
     {
-        "name": "enter name",
-        "discription": "discription",
-        "img": "https://cdn.pixabay.com/photo/2021/04/19/05/12/kawasaki-ninja-h2r-6190254_1280.jpg",
-        "price": "704945",
-        "quantity": "4",
-        "supplierName": "supplierName"
-    },
-    {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki KLX 110",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/PQWn4Bk/1.png",
         "price": "price",
         "quantity": "quantity",
-        "supplierName": "supplierName"
+        "supplierName": "Thandso"
     },
     {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki KLX 450R",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/9Hz6R4T/2.png",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
+        "price": "12343422",
+        "quantity": "9",
+        "supplierName": "thore"
     },
     {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki Ninja 400 Brak",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/d4N1Wx6/5.png",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
+        "price": "245254554",
+        "quantity": "7",
+        "supplierName": "jony "
     },
     {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki Ninja 32700 Mile",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/0nBmbFN/4.png",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
+        "price": "2342345436",
+        "quantity": "23",
+        "supplierName": "salnom"
     },
     {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki Ninja 400 Mile",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/Dpp5LS1/7.png",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
+        "price": "265456543",
+        "quantity": "3",
+        "supplierName": "tomysa"
     },
     {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki Ninja 1042 Mile",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/4s9KnGZ/8.png",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
+        "price": "836384",
+        "quantity": "12",
+        "supplierName": "jahid"
     },
     {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki Ninja le 323",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/56vzcfk/6.png",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
+        "price": "73477234",
+        "quantity": "28",
+        "supplierName": "jontes"
     },
     {
-        "name": "name",
-        "discription": "discription",
+        "name": "Kawasaki Ninja 4383ile",
+        "discription": "The power output of the super Ninja H2®R  motorcycle is made possible",
         "img": "https://i.ibb.co/pQtP9NR/3.png",
-        "price": "price",
-        "quantity": "quantity",
-        "supplierName": "supplierName"
+        "price": "837383",
+        "quantity": "12",
+        "supplierName": "tom son"
     }
 ]

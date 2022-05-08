@@ -40,7 +40,6 @@ const Footer = () => {
                             {/* <!--3ST PART--> */}
                             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
                                 <h5 className="text-white mb-4">Help</h5>
-
                                 <ul className="list-unstyled">
                                     <li>
                                         <h6 className="text-white">Contect us : +344638 </h6>

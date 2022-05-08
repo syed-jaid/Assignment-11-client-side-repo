@@ -7,7 +7,7 @@ const Items = () => {
 
     // get data from database
     useEffect(() => {
-        fetch('http://localhost:5000/cards')
+        fetch('https://shielded-woodland-29897.herokuapp.com/cards')
             .then(res => res.json())
             .then(data => {
                 setcards(data)
@@ -16,7 +16,7 @@ const Items = () => {
     const deleteItem = (props) => {
         const confirm = window.confirm('Do you want to Remove it')
         if (confirm) {
-            fetch(`http://localhost:5000/delete/${props}`, {
+            fetch(`https://shielded-woodland-29897.herokuapp.com/delete/${props}`, {
                 method: 'Delete',
             })
                 .then(response => response.json())
@@ -37,12 +37,12 @@ const Items = () => {
                         <img src={card.img} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h3 className="">{card.name}</h3>
-                            <p className="card-text mb-0">{card.discription} Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            <p className="card-text mb-0">{card.discription}
                                 <br />
-                                <small>{card.supplierName}</small>
+                                <small>supplier Name: {card.supplierName}</small>
                             </p>
                             <p className='mb-0'>Quantity: {card.quantity}pc</p>
-                            <h4 className='mb-4 mt-2'>Price: $4493749</h4>
+                            <h4 className='mb-4 mt-2'>Price: ${card.price}</h4>
                             {/* delete button  */}
                             <button className='card-buttons' onClick={() => deleteItem(card._id)}>Delete</button>
                             {/* updata button  */}

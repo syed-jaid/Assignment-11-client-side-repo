@@ -9,7 +9,7 @@ const Inventory = () => {
     const [quantitys, setquntity] = useState('')
 
     useEffect(() => {
-        fetch(`http://localhost:5000/card/${id}`)
+        fetch(`https://shielded-woodland-29897.herokuapp.com/card/${id}`)
             .then(res => res.json())
             .then(data => {
                 setcard(data);
@@ -29,7 +29,7 @@ const Inventory = () => {
 
         const updata = { quantity: carrentQuantity };
         // updata req to the database 
-        const url = `http://localhost:5000/update/${props._id}`
+        const url = `https://shielded-woodland-29897.herokuapp.com/update/${props._id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -59,7 +59,7 @@ const Inventory = () => {
         // updata req to the database 
         const quantity = card.quantity + inputValue;
         const updata = { quantity: quantity };
-        const url = `http://localhost:5000/update/${card._id}`
+        const url = `https://shielded-woodland-29897.herokuapp.com/update/${card._id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -95,7 +95,10 @@ const Inventory = () => {
                                 <h2 className="card-title">{card.name} </h2>
                                 <h3> ID :{card._id}</h3>
                                 {/* card discription  */}
-                                <h6 className="card-text">{card.discription} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, recusandae hic assumenda velit neque soluta enim, et veniam eligendi, ea id beatae? Vero qui, beatae veniam culpa rem nisi cumque. </h6>
+                                <h5 className="card-text">{card.discription}
+                                    <br />
+                                    supplier Name: {card.supplierName}
+                                </h5>
                                 {/* items price  */}
                                 <h3 className='my-2'>Price: ${card.price}</h3>
                                 {/* items quantity */}

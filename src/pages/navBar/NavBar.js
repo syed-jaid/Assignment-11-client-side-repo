@@ -29,7 +29,7 @@ const NavBar = () => {
                             user[0] ? <span><Link className='nav-rout-link' to='/addItems'>Add Item</Link>
                                 <Link className='nav-rout-link' to='/myItems'>My items</Link></span> : ''
                         }
-                        <Link className='nav-rout-link' to='/'>Blog</Link>
+                        <Link className='nav-rout-link' to='/blog'>Blog</Link>
                     </div>
                     {/* navbar sign in and sign out */}
                     <div className='sign-div-btn'>
@@ -47,7 +47,7 @@ const NavBar = () => {
                                     navgaiteValue === '/login' ? <Link to='/login'><button className='sign-out-btn font-monospace'>Log In</button></Link> : ''
                                 }
                                 {
-                                    navgaiteValue === '/' || navgaiteValue === '/manageInventories' || navgaiteValue === '/blog' || navgaiteValue === `/inventory` ? <Link className=" sign-out-btn" to='/login'>log In</Link> : ''
+                                    navgaiteValue === '/' || navgaiteValue === '/manageInventories' || navgaiteValue === '/blog' ? <Link to='/Registor'><button className='sign-out-btn font-monospace'>Registor</button></Link> : ''
                                 }
 
                             </div>
